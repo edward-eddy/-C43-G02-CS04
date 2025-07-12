@@ -36,6 +36,19 @@
             Sub = Num1 - Num2;
         }
         #endregion
+
+        #region Q04 Functions
+        static int SumOfDigits(int Number)
+        {
+            int Sum = 0;
+            while (Number > 0)
+            {
+                Sum += Number % 10;
+                Number /= 10;
+            }
+            return Sum;
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -127,6 +140,22 @@
             //SumAndSub(Num1, Num2, out Sum, out Sub);
             //Console.WriteLine($"\nSumation: {Sum}, Subtraction: {Sub}");
             #endregion
+
+            #region Q04
+            /*
+                Q04. Write a program in C# Sharp to create a function to calculate the sum of 
+            the individual digits of a given number.
+            */
+            //int num;
+            //do
+            //{
+            //    Console.Write("Enter a number : ");
+            //} while (!int.TryParse(Console.ReadLine(), out num));
+            //int Result = SumOfDigits(num);
+            //Console.WriteLine($"The sum of the digits of the number 25 is: {Result}");
+            #endregion
+
+
         }
     }
 }
