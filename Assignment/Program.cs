@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        #region Increment(int number)
+        #region Q01 Functions
         static void Increment(int number)
         {
             number += 5;
@@ -16,7 +16,7 @@
         }
         #endregion
 
-        #region PowerByTwo(int[] numbers)
+        #region Q02 Functions
         static void PowerByTwo(int[] numbers)
         {
             numbers[0] = 240;
@@ -29,7 +29,13 @@
         }
         #endregion
 
-
+        #region Q03 Functions
+        static void SumAndSub(int Num1, int Num2, out int Sum, out int Sub)
+        {
+            Sum = Num1 + Num2;
+            Sub = Num1 - Num2;
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -103,6 +109,23 @@
             //foreach (var number in numbers)
             //    Console.Write(number + " ");
             //Console.WriteLine("The first element changed and also the reference");
+            #endregion
+
+            #region Q03
+            /*
+             Q03. Write a c# Function that accept 4 parameters from user and return result of summation 
+             and subtracting of two numbers
+             */
+
+            //int Num1, Num2, Sum, Sub;
+            //Console.Write("Enter first number: ");
+            //Num1 = int.Parse(Console.ReadLine());
+
+            //Console.Write("Enter second number: ");
+            //Num2 = int.Parse(Console.ReadLine());
+
+            //SumAndSub(Num1, Num2, out Sum, out Sub);
+            //Console.WriteLine($"\nSumation: {Sum}, Subtraction: {Sub}");
             #endregion
         }
     }
