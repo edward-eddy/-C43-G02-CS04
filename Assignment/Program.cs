@@ -76,6 +76,18 @@
             Max = Numbers.Max();
         }
         #endregion
+
+        #region Q07 Functions
+        static int Factorial(int Number)
+        {
+            int Result = 1;
+            while (Number > 0)
+            {
+                Result *= Number--;
+            }
+            return Result;
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -204,6 +216,13 @@
             //MinMaxArray(Numbers, out Min, out Max);
             //Console.WriteLine($"The Minimum value is: {Min}");
             //Console.WriteLine($"The Maximum value is: {Max}");
+            #endregion
+
+            #region Q07
+            //Create function to calculate the factorial of the number specified as parameter
+
+            //int Input = 5;
+            //Console.WriteLine($"The Factorial Of {Input} Is : {Factorial(Input)}");
             #endregion
         }
     }
