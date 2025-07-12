@@ -68,6 +68,14 @@
             }
         }
         #endregion
+
+        #region Q06 Functions
+        static void MinMaxArray(int[] Numbers, out int Min, out int Max)
+        {
+            Min = Numbers.Min();
+            Max = Numbers.Max();
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -185,7 +193,18 @@
             //Console.WriteLine(IsPrime(num));
             #endregion
 
+            #region Q06
+            /*
+                Create a function named MinMaxArray, to return the minimum and
+                maximum values stored in an array, using reference parameters
+             */
 
+            //int[] Numbers = { 131, 232, 333, 234, 30, 606, 437, 378, 569, 100 };
+            //int Min, Max;
+            //MinMaxArray(Numbers, out Min, out Max);
+            //Console.WriteLine($"The Minimum value is: {Min}");
+            //Console.WriteLine($"The Maximum value is: {Max}");
+            #endregion
         }
     }
 }
