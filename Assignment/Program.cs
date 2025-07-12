@@ -97,6 +97,20 @@
             Sentence = new string(Temp);
         }
         #endregion
+
+        #region Q09 Functions
+        static void IdentitTtable(int Index)
+        {
+            for (int i = 0; i < Index; i++)
+            {
+                for (int j = 0; j < Index; j++)
+                {
+                    Console.Write($"{i}{j}  ");
+                }
+                Console.WriteLine("\n");
+            }
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -242,6 +256,19 @@
             //string Input = "Create a function named \"ChangeChar\"";
             //ChangeChar(ref Input);
             //Console.WriteLine(Input);
+            #endregion
+
+            #region Q09
+            /*
+                Write a program that prints an identity matrix using for loop, in other words takes a value n 
+                from the user and shows the identity table of size n * n.
+             */
+
+
+            //Console.Write("Enter indexes Number : ");
+            //int index = int.Parse(Console.ReadLine());
+            //IdentitTtable(index);
+
             #endregion
         }
     }
