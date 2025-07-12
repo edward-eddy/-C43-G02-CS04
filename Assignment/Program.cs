@@ -88,6 +88,15 @@
             return Result;
         }
         #endregion
+
+        #region Q08 Functions
+        static void ChangeChar(ref string Sentence)
+        {
+            char[] Temp = Sentence.ToCharArray();
+            Temp[0] = Temp[0] == 'A' ? 'B' : 'A';
+            Sentence = new string(Temp);
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -223,6 +232,16 @@
 
             //int Input = 5;
             //Console.WriteLine($"The Factorial Of {Input} Is : {Factorial(Input)}");
+            #endregion
+
+            #region Q08
+            //Create a function named "ChangeChar" to modify a letter in a certain position(0 based) of a string,
+            //replacing it with a different letter
+
+
+            //string Input = "Create a function named \"ChangeChar\"";
+            //ChangeChar(ref Input);
+            //Console.WriteLine(Input);
             #endregion
         }
     }
