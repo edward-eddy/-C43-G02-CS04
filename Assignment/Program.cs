@@ -49,6 +49,25 @@
             return Sum;
         }
         #endregion
+
+        #region Q05 Functions
+        static bool IsPrime(int num)
+        {
+            if (num == 2)
+                return true;
+            else if (num % 2 == 0 || num < 2)
+                return false;
+            else
+            {
+                for (int i = 3; i < num / 2; i++)
+                {
+                    if (num % i == 0)
+                        return false;
+                }
+                return true;
+            }
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -153,6 +172,17 @@
             //} while (!int.TryParse(Console.ReadLine(), out num));
             //int Result = SumOfDigits(num);
             //Console.WriteLine($"The sum of the digits of the number 25 is: {Result}");
+            #endregion
+
+            #region Q05
+            /*
+             Create a function named "IsPrime", which receives an integer number
+             and retuns true if it is prime, or false if it is not
+             */
+
+            //Console.Write("Enter the Number : ");
+            //int num = int.Parse(Console.ReadLine());
+            //Console.WriteLine(IsPrime(num));
             #endregion
 
 
