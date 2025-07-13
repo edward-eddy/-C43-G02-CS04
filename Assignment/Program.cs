@@ -143,6 +143,25 @@
             return Temp[Temp.Length - 2];
         }
         #endregion
+
+        #region Q14 Functions
+        static void ElementLargestDistance(int[] Input, out int Element, out int Distance)
+        {
+            Element = 0;
+            Distance = 0;
+            int TempDistance;
+
+            for (int i = 0; i < Input.Length; i++)
+            {
+                TempDistance = Array.LastIndexOf(Input, Input[i]) - Array.IndexOf(Input, Input[i]) - 1;
+                if (TempDistance > Distance)
+                {
+                    Element = Input[i];
+                    Distance = TempDistance;
+                }
+            }
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -339,6 +358,24 @@
             //int[] Input = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
             //int Output = SecondLargest(Input);
             //Console.WriteLine($"The Second Largest Element in the Array is : {Output}");
+            #endregion
+
+            #region Q14
+            /*
+             Consider an Array of Integer values with size N, having values as in this Example
+            {7, 0, 0, 0, 5, 6, 7, 5, 0, 7, 5, 3}
+
+            write a program to find the longest distance between Two equal cells. In this example,
+            The measured by the number Of cells.
+
+            for example, the distance between the first and the fourth cell is 2 (cell 2 and cell 3).
+             */
+
+
+
+            //int[] Input = { 7, 0, 0, 0, 5, 6, 7, 5, 0, 7, 5, 3 };
+            //ElementLargestDistance(Input, out int Element, out int Distance);
+            //Console.WriteLine($"The longest distance is between the first {Element} and the last {Element}\n is {Distance}");
             #endregion
         }
     }
