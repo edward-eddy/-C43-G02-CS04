@@ -175,6 +175,37 @@
             return Output.TrimEnd();
         }
         #endregion
+
+        #region Q16 Functions
+        static int[,] AssignArray(int Size)
+        {
+            int[,] Array1 = new int[Size, Size];
+
+            for (int i = 0; i < Size; i++)
+            {
+                for (int j = 0; j < Size; j++)
+                {
+                    Console.Write($"Enter Element [{i}][{j}] : ");
+                    Array1[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+            return Array1;
+        }
+        static void CopyAndPrintMatrix(int Size, int[,] Array1)
+        {
+            int[,] Array2 = new int[Size, Size];
+
+            for (int i = 0; i < Size; i++)
+            {
+                for (int j = 0; j < Size; j++)
+                {
+                    Array2[i, j] = Array1[i, j];
+                    Console.Write($"{Array2[i, j]}   ");
+                }
+                Console.WriteLine("\n");
+            }
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -398,6 +429,20 @@
             //string Input = Console.ReadLine();
             //string Output = SentenceBackwords(Input);
             //Console.WriteLine(Output);
+            #endregion
+
+            #region Q16
+            /*
+                Write a program to create two multidimensional arrays of same size. 
+                Accept values from the user and store them in first array. 
+                Now copy all the elements of the first array on second array and print second array.
+             */
+
+            //Console.Write("Enter The Array Size: ");
+            //int Size = int.Parse(Console.ReadLine());
+            //int[,] Input = new int[Size, Size];
+            //Input = AssignArray(Size);
+            //CopyAndPrintMatrix(Size, Input);
             #endregion
         }
     }
