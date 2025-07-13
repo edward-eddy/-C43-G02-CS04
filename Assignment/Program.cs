@@ -162,6 +162,19 @@
             }
         }
         #endregion
+
+        #region Q15 Functions
+        static string SentenceBackwords(string Input)
+        {
+            string Output = "";
+            string[] StringArr = Input.Split(" ");
+            for (int i = (StringArr.Length - 1); i >= 0; i--)
+            {
+                Output += $"{StringArr[i]} ";
+            }
+            return Output.TrimEnd();
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -376,6 +389,15 @@
             //int[] Input = { 7, 0, 0, 0, 5, 6, 7, 5, 0, 7, 5, 3 };
             //ElementLargestDistance(Input, out int Element, out int Distance);
             //Console.WriteLine($"The longest distance is between the first {Element} and the last {Element}\n is {Distance}");
+            #endregion
+
+            #region Q15
+            // Given a list of space separated words, reverse the order of the words.
+
+            //Console.Write("Enter Any Sentence: ");
+            //string Input = Console.ReadLine();
+            //string Output = SentenceBackwords(Input);
+            //Console.WriteLine(Output);
             #endregion
         }
     }
