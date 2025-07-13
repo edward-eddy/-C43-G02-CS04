@@ -132,6 +132,17 @@
             return Result;
         }
         #endregion
+
+        #region Q13 Functions
+        static int SecondLargest(int[] Input)
+        {
+            int[] Temp = new int[Input.Length];
+            Input.CopyTo(Temp, 0);
+            Array.Sort(Temp);
+
+            return Temp[Temp.Length - 2];
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -320,6 +331,14 @@
             //MinMaxArray(ref Numbers, out Min, out Max);
             //Console.WriteLine($"The Minimum value is: {Min}");
             //Console.WriteLine($"The Maximum value is: {Max}");
+            #endregion
+
+            #region Q13
+            // Write a program in C# Sharp to find the second largest element in an array
+
+            //int[] Input = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+            //int Output = SecondLargest(Input);
+            //Console.WriteLine($"The Second Largest Element in the Array is : {Output}");
             #endregion
         }
     }
