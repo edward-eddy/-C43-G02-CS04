@@ -70,7 +70,7 @@
         #endregion
 
         #region Q06 Functions
-        static void MinMaxArray(int[] Numbers, out int Min, out int Max)
+        static void MinMaxArray(ref int[] Numbers, out int Min, out int Max)
         {
             Min = Numbers.Min();
             Max = Numbers.Max();
@@ -257,7 +257,7 @@
 
             //int[] Numbers = { 131, 232, 333, 234, 30, 606, 437, 378, 569, 100 };
             //int Min, Max;
-            //MinMaxArray(Numbers, out Min, out Max);
+            //MinMaxArray(ref Numbers, out Min, out Max);
             //Console.WriteLine($"The Minimum value is: {Min}");
             //Console.WriteLine($"The Maximum value is: {Max}");
             #endregion
@@ -308,6 +308,18 @@
             //int[] Output = MergeArrays(Arr1, Arr2);
             //foreach (int i in Output)
             //    Console.Write($"{i} ");
+            #endregion
+
+            #region Q12
+            // Write a program in C# Sharp to find maximum and minimum element in an array
+
+            /*              Same As No.6            */
+
+            //int[] Numbers = { 131, 232, 333, 234, 30, 606, 437, 378, 569, 100 };
+            //int Min, Max;
+            //MinMaxArray(ref Numbers, out Min, out Max);
+            //Console.WriteLine($"The Minimum value is: {Min}");
+            //Console.WriteLine($"The Maximum value is: {Max}");
             #endregion
         }
     }
