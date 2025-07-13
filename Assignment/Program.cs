@@ -121,6 +121,17 @@
             return Result;
         }
         #endregion
+
+        #region Q11 Functions
+        static int[] MergeArrays(int[] Arr1, int[] Arr2)
+        {
+            int[] Result = new int[Arr1.Length + Arr2.Length];
+            Arr1.CopyTo(Result, 0);
+            Arr2.CopyTo(Result, Arr1.Length);
+            Array.Sort(Result);
+            return Result;
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -287,6 +298,16 @@
             //int[] InputArr = { 1, 2, 3, 8, 6, 34, 6, 7, 4 };
             //int Output = ArraySumm(InputArr);
             //Console.WriteLine($"The Sum Of The Array Elements Is : {Output}");
+            #endregion
+
+            #region Q11
+            // Write a program in C# Sharp to merge two arrays of the same size sorted in ascending order.
+
+            //int[] Arr1 = { 10, 12, 43, 76, 22, 90, 8 };
+            //int[] Arr2 = { 9, 23, 54, 15, 32, 34, 5 };
+            //int[] Output = MergeArrays(Arr1, Arr2);
+            //foreach (int i in Output)
+            //    Console.Write($"{i} ");
             #endregion
         }
     }
