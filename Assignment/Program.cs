@@ -111,6 +111,16 @@
             }
         }
         #endregion
+
+        #region Q10 Functions
+        static int ArraySumm(int[] Number)
+        {
+            int Result = 0;
+            foreach (int i in Number)
+                Result += i;
+            return Result;
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q01
@@ -269,6 +279,14 @@
             //int index = int.Parse(Console.ReadLine());
             //IdentitTtable(index);
 
+            #endregion
+
+            #region Q10
+            // Write a program in C# Sharp to find the sum of all elements of the array.
+
+            //int[] InputArr = { 1, 2, 3, 8, 6, 34, 6, 7, 4 };
+            //int Output = ArraySumm(InputArr);
+            //Console.WriteLine($"The Sum Of The Array Elements Is : {Output}");
             #endregion
         }
     }
